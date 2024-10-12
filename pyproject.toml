@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "prediccion_eolica"
+version = "0.0.1"
+description = "\"Modelo de predicci\u00f3n de producci\u00f3n de energ\u00eda e\u00f3lica basado en variables meteorol\u00f3gicas en Tierra del Fuego.\""
+authors = [
+  { name = "Ever Loza" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = "~=3.12"
+
+[tool.black]
+line-length = 99
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+)/
+'''
+
+[tool.ruff.lint.isort]
+known_first_party = ["prediccion_eolica"]
+force_sort_within_sections = true
