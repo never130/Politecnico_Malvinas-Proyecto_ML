@@ -6,55 +6,58 @@
 
 "Modelo de predicción de producción de energía eólica basado en variables meteorológicas en Tierra del Fuego."
 
-## Project Organization
+## Organizacion del Proyecto
 
 ```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
+├── LICENSE            <- Licencia de código abierto si se elige una
+├── Makefile           <- Makefile con comandos de conveniencia como `make data` o `make train`
+├── README.md          <- README de nivel superior para desarrolladores que utilizan este proyecto.
 ├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
+│   ├── external       <- Datos de fuentes de terceros.
+│   ├── interim        <- Datos intermedios que han sido transformados.
+│   ├── processed      <- Los conjuntos de datos finales y canónicos para modelado.
+│   └── raw            <- La volcado original e inmutable de datos.
+│       ├── scraping.py              <- Código para realizar el scraping de datos meteorológicos.
+│       └── boletin_2016_01-2024_08.xlsx <- Archivo excel con los datos meteorológicos extraídos.
+│       
+├── docs               <- Un proyecto mkdocs por defecto; ver www.mkdocs.org para más detalles
 │
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
+├── models             <- Modelos entrenados y serializados, predicciones de modelos o resúmenes de modelos
 │
-├── models             <- Trained and serialized models, model predictions, or model summaries
+├── notebooks          <- Notebooks de Jupyter. La convención de nombres es un número (para ordenar),
+│                         las iniciales del creador y una breve descripción delimitada por guiones, por ejemplo,
+│                         `1.0-jqp-exploración-inicial-de-datos`.
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── pyproject.toml     <- Archivo de configuración del proyecto con metadatos del paquete para 
+│                         prediccion_eolica y configuración para herramientas como black
 │
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         prediccion_eolica and configuration for tools like black
+├── references         <- Diccionarios de datos, manuales y otros materiales explicativos.
 │
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+├── reports            <- Análisis generado como HTML, PDF, LaTeX, etc.
+│   └── figures        <- Gráficos y figuras generados para ser utilizados en informes
 │
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
+├── requirements.txt   <- Archivo de requisitos para reproducir el entorno de análisis, por ejemplo,
+│                         generado con `pip freeze > requirements.txt`
 │
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
+├── setup.cfg          <- Archivo de configuración para flake8
 │
-├── setup.cfg          <- Configuration file for flake8
-│
-└── prediccion_eolica   <- Source code for use in this project.
+└── src   <- Código fuente para usar en este proyecto.
     │
-    ├── __init__.py             <- Makes prediccion_eolica a Python module
+    ├── __init__.py             <- Hace que prediccion_eolica sea un módulo de Python
     │
-    ├── config.py               <- Store useful variables and configuration
+    ├── config.py               <- Almacena variables y configuraciones útiles
     │
-    ├── dataset.py              <- Scripts to download or generate data
+    ├── dataset.py              <- Scripts para descargar o generar datos
     │
-    ├── features.py             <- Code to create features for modeling
+    ├── features.py             <- Código para crear características para modelado
     │
     ├── modeling                
     │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
+    │   ├── predict.py          <- Código para ejecutar inferencias de modelos con modelos entrenados          
+    │   └── train.py            <- Código para entrenar modelos
     │
-    └── plots.py                <- Code to create visualizations
+    └── plots.py                <- Código para crear visualizaciones
+
 ```
 
 --------

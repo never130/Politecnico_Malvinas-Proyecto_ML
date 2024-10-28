@@ -8,3 +8,4 @@ python-dotenv
 tqdm
 typer
 -e .
+openpyxl
