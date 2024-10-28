@@ -20,7 +20,7 @@
 │       ├── scraping.py              <- Código para realizar el scraping de datos meteorológicos.
 │       └── boletin_2016_01-2024_08.xlsx <- Archivo excel con los datos meteorológicos extraídos.
 │       
-├── docs               <- Un proyecto mkdocs por defecto; ver www.mkdocs.org para más detalles
+├── docs               <- Documentacion del proyecto; ver www.mkdocs.org para más detalles
 │
 ├── models             <- Modelos entrenados y serializados, predicciones de modelos o resúmenes de modelos
 │
