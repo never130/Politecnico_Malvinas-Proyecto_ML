@@ -1,11 +1,14 @@
 black
 flake8
 isort
-loguru
+loguru~=0.7.2
 mkdocs
 pip
-python-dotenv
-tqdm
-typer
+python-dotenv~=1.0.1
+tqdm~=4.66.5
+typer~=0.12.5
 -e .
 openpyxl
+requests~=2.32.3
+pandas~=2.2.3
+beautifulsoup4~=4.12.3
