@@ -4,7 +4,38 @@
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-"Modelo de predicción de producción de energía eólica basado en variables meteorológicas en Tierra del Fuego."
+Este proyecto se centra en el análisis y modelado de datos meteorológicos obtenidos de la Estación Astronómica Río Grande (EARG), con el objetivo de desarrollar modelos de aprendizaje automático para predecir condiciones climáticas en la región de Tierra del Fuego.
+
+## **Estructura del Proyecto**
+El proyecto sigue una estructura organizada en carpetas, diseñada para almacenar y procesar los datos de manera eficiente. A continuación se describe la organización principal del repositorio:
+
+- data/: Carpeta principal de datos del proyecto.
+    - raw/: Contiene los datos originales y el script de scraping.
+
+- notebooks/: Contiene notebooks de Jupyter con los análisis y modelos desarrollados.
+
+- src/: Código fuente del proyecto, incluyendo funciones personalizadas y scripts de preprocesamiento y modelado.
+
+## **Acceso a los Datos**
+Los archivos de datos están organizados en la carpeta **data/raw**
+
+## **Instalación y Ejecución**
+**Clonar este repositorio:**
+```
+git clone https://github.com/never130/Politecnico_Malvinas-Proyecto_ML.git
+cd Politecnico_Malvinas-Proyecto_ML
+```
+**Crear y activar un entorno virtual (opcional pero recomendado):**
+```
+python3 -m venv .venv
+source .venv/bin/activate  # Para Linux/Mac
+.venv\Scripts\activate     # Para Windows
+```
+**Instalar las dependencias:**
+```
+pip install -r requirements.txt
+Ejecutar el análisis en los notebooks ubicados en notebooks/.
+```
 
 ## Organizacion del Proyecto
 
