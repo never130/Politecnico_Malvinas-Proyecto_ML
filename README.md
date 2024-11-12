@@ -15,8 +15,6 @@ El proyecto sigue una estructura organizada en carpetas, diseñada para almacena
 
 - notebooks/: Contiene notebooks de Jupyter con los análisis y modelos desarrollados.
 
-- src/: Código fuente del proyecto, incluyendo funciones personalizadas y scripts de preprocesamiento y modelado.
-
 - docs: Carpeta donde contiene los archivos pdf entregables del proyecto de Machine Learning junto al enlace del video explicativo
 
 ## **Acceso a los Datos**
