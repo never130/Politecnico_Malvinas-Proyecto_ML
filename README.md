@@ -17,7 +17,7 @@ El proyecto sigue una estructura organizada en carpetas, diseñada para almacena
 
 - src/: Código fuente del proyecto, incluyendo funciones personalizadas y scripts de preprocesamiento y modelado.
 
-- docs: Carpeta donde contiene los archivos pdf entregables del proyecto de Machine Learning
+- docs: Carpeta donde contiene los archivos pdf entregables del proyecto de Machine Learning junto al enlace del video explicativo
 
 ## **Acceso a los Datos**
 Los archivos de datos están organizados en la carpeta **data/raw**
@@ -77,8 +77,7 @@ Ejecutar el análisis en los notebooks ubicados en notebooks/.
 │                         generado con `pip freeze > requirements.txt`
 │
 ├── setup.cfg          <- Archivo de configuración para flake8
-│
-└── src   <- Código fuente para usar en este proyecto.
+
 
 ```
 
