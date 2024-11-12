@@ -11,10 +11,13 @@ El proyecto sigue una estructura organizada en carpetas, diseñada para almacena
 
 - data/: Carpeta principal de datos del proyecto.
     - raw/: Contiene los datos originales y el script de scraping.
+    - processed/: Contiene los datos preprocesados y limpios de los datasets.
 
 - notebooks/: Contiene notebooks de Jupyter con los análisis y modelos desarrollados.
 
 - src/: Código fuente del proyecto, incluyendo funciones personalizadas y scripts de preprocesamiento y modelado.
+
+- docs: Carpeta donde contiene los archivos pdf entregables del proyecto de Machine Learning
 
 ## **Acceso a los Datos**
 Los archivos de datos están organizados en la carpeta **data/raw**
@@ -47,8 +50,11 @@ Ejecutar el análisis en los notebooks ubicados en notebooks/.
 │   ├── external       <- Datos de fuentes de terceros.
 │   ├── interim        <- Datos intermedios que han sido transformados.
 │   ├── processed      <- Los conjuntos de datos finales y canónicos para modelado.
+│   │   ├── datos_limpios.csv       <- Archivo csv limpio para el posterior modelo de machine learning.
+│   │   ├── datos procesados.csv        <- Archivo csv con los datos pre-procesados.
+│   │   └── produccion_simulada_eolica.csv      <- Archivo csv con los datos limpios sumando los datos creados con │   │                                              la informacion y simulacion obtenida del parque eolico.
 │   └── raw            <- La volcado original e inmutable de datos.
-│       ├── scraping.py              <- Código para realizar el scraping de datos meteorológicos.
+│       ├── scraping.ipynb              <- Código para realizar el scraping de datos meteorológicos.
 │       └── boletin_2016_01-2024_08.xlsx <- Archivo excel con los datos meteorológicos extraídos.
 │       
 ├── docs               <- Documentacion del proyecto; ver www.mkdocs.org para más detalles
@@ -73,21 +79,6 @@ Ejecutar el análisis en los notebooks ubicados en notebooks/.
 ├── setup.cfg          <- Archivo de configuración para flake8
 │
 └── src   <- Código fuente para usar en este proyecto.
-    │
-    ├── __init__.py             <- Hace que prediccion_eolica sea un módulo de Python
-    │
-    ├── config.py               <- Almacena variables y configuraciones útiles
-    │
-    ├── dataset.py              <- Scripts para descargar o generar datos
-    │
-    ├── features.py             <- Código para crear características para modelado
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Código para ejecutar inferencias de modelos con modelos entrenados          
-    │   └── train.py            <- Código para entrenar modelos
-    │
-    └── plots.py                <- Código para crear visualizaciones
 
 ```
 

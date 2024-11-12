@@ -23,11 +23,15 @@ El dataset meteorológico fue recopilado directamente de los boletines públicos
 
 **URL de referencia:** http://earg.fcaglp.unlp.edu.ar/meteorologia/boletin/
 
-## **Informacion en cuanto a los datos recopilados del proyecto Parque Eolico de Tierra del Fuego**
+### **Informacion en cuanto a los datos recopilados del proyecto Parque Eolico de Tierra del Fuego**
 
 **Fuente:** https://www.mejorenergia.com.ar/noticias/2023/10/03/1991-tierra-del-fuego-obtiene-un-prestamo-de-us-65-millones-para-la-construccion-de-un-parque-eolico
 
 **Fuente:** https://www.tierradelfuego.gob.ar/wp-content/uploads/2023/08/Resumen-No-Tecnico-Parque-Eolico-0823-Espanol.pdf
+
+-----
+
+## Descripcion a los archivos del dataset
 
 **Archivo boletin_2016_01-2024_08.xlsx**
 Este archivo contiene las variables meteorológicas recogidas desde enero de 2016 hasta agosto de 2024, incluyendo datos sobre:
